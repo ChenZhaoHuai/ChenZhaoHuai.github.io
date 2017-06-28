@@ -54,17 +54,35 @@
   
 
   
+    
+      
+    
 
-  
-
+    
   
 
   
 
   
     
+      
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -93,16 +111,18 @@
 
 
 
-<meta name="description" content="第一次搭建博客，在用Mac搭建Hexo博客于Github上的完整历程，写一些东西记录下。 安装前提安装Hexo前，必须保证电脑中是否已安装以下前提：  Node.js Git  安装步骤就不再此详细说明，安装官网的步骤操作即可。 安装">
+<meta name="description" content="第一次搭建博客，在用Mac搭建Hexo博客于Github上的完整历程，写一些东西记录下。 安装前提安装Hexo前，必须保证电脑中是否已安装以下前提：  Node.js Git  安装步骤就不再此详细说明，安装官网的步骤操作即可。 安装Hexo使用命令行安装Hexo  $ npm install hexo-cli -g  创建一个文件夹初始化blog。 12$ cd ~/blog $ hexo in">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于GitHub的Hexo博客随手记">
 <meta property="og:url" content="http://yoursite.com/2017/06/13/基于GitHub的Hexo博客随手记/index.html">
 <meta property="og:site_name" content="陈朝怀的技术博客">
-<meta property="og:description" content="第一次搭建博客，在用Mac搭建Hexo博客于Github上的完整历程，写一些东西记录下。 安装前提安装Hexo前，必须保证电脑中是否已安装以下前提：  Node.js Git  安装步骤就不再此详细说明，安装官网的步骤操作即可。 安装">
-<meta property="og:updated_time" content="2017-06-13T13:52:47.000Z">
+<meta property="og:description" content="第一次搭建博客，在用Mac搭建Hexo博客于Github上的完整历程，写一些东西记录下。 安装前提安装Hexo前，必须保证电脑中是否已安装以下前提：  Node.js Git  安装步骤就不再此详细说明，安装官网的步骤操作即可。 安装Hexo使用命令行安装Hexo  $ npm install hexo-cli -g  创建一个文件夹初始化blog。 12$ cd ~/blog $ hexo in">
+<meta property="og:image" content="http://orlbid9o7.bkt.clouddn.com/%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE.png">
+<meta property="og:updated_time" content="2017-06-28T15:07:41.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于GitHub的Hexo博客随手记">
-<meta name="twitter:description" content="第一次搭建博客，在用Mac搭建Hexo博客于Github上的完整历程，写一些东西记录下。 安装前提安装Hexo前，必须保证电脑中是否已安装以下前提：  Node.js Git  安装步骤就不再此详细说明，安装官网的步骤操作即可。 安装">
+<meta name="twitter:description" content="第一次搭建博客，在用Mac搭建Hexo博客于Github上的完整历程，写一些东西记录下。 安装前提安装Hexo前，必须保证电脑中是否已安装以下前提：  Node.js Git  安装步骤就不再此详细说明，安装官网的步骤操作即可。 安装Hexo使用命令行安装Hexo  $ npm install hexo-cli -g  创建一个文件夹初始化blog。 12$ cd ~/blog $ hexo in">
+<meta name="twitter:image" content="http://orlbid9o7.bkt.clouddn.com/%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE.png">
 
 
 
@@ -338,7 +358,48 @@
 <li><a href="https://git-scm.com/" target="_blank" rel="external">Git</a></li>
 </ul>
 <p>安装步骤就不再此详细说明，安装官网的步骤操作即可。</p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>使用命令行安装Hexo</p>
+<blockquote>
+<p>$ npm install hexo-cli -g</p>
+</blockquote>
+<p>创建一个文件夹初始化blog。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd ~/blog </div><div class="line">$ hexo init .</div></pre></td></tr></table></figure>
+<h3 id="Next主题安装"><a href="#Next主题安装" class="headerlink" title="Next主题安装"></a>Next主题安装</h3><p>Next主题安装配置，根据<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">Next</a>文档中介绍安装配置Next主题。</p>
+<h3 id="Hexo简单使用命令"><a href="#Hexo简单使用命令" class="headerlink" title="Hexo简单使用命令"></a>Hexo简单使用命令</h3><p>这里介绍几个Hexo常用的命令:</p>
+<ol>
+<li>hexo generate (hexo g) 生成静态文件，会在当前目录下生成一个新的叫做public的文件夹</li>
+<li>hexo server (hexo s) 启动本地web服务，用于博客的预览</li>
+<li>hexo deploy (hexo d) 部署播客到远端（比如github, heroku等平台）</li>
+</ol>
+<p>新建一篇文章：</p>
+<blockquote>
+<p>$ hexo new 基于GitHub的Hexo博客随手记</p>
+</blockquote>
+<p>在blog/source/_posts/目录下修改基于GitHub的Hexo博客随手记.md文件，然后执行以下命令生成html：</p>
+<blockquote>
+<p>hexo generate</p>
+</blockquote>
+<p>本地预览：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div><div class="line">=&gt; [info] Hexo is running at localhost:4000/. Press Ctrl+C to stop.</div></pre></td></tr></table></figure>
+<h3 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h3><p>比较了阿里的<a href="https://wanwang.aliyun.com/" target="_blank" rel="external">万网</a>和腾讯的<a href="https://www.qcloud.com/" target="_blank" rel="external">腾讯云</a>发现我的域名==chenzhaohuai.com==在腾讯的腾讯云比较便宜，所以在腾讯云购买域名==chenzhaohuai.com==，以==blog.chenzhaohuai.com==作为博客的域名。<br>按以下步骤进行配置域名解析。</p>
+<ol>
+<li>进入腾讯云的余名管理后台</li>
+<li>添加CNAME记录类型记录值对应你gitHub的博客域名即==chenzhaohuai.github.io.== 主机记录默认@</li>
+<li>添加记录类型A主机记录为blog，对应的记录值是你gitHub博客的ip地址。</li>
+</ol>
+<p>如以下图所示<br><img src="http://orlbid9o7.bkt.clouddn.com/%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE.png" alt="image"></p>
+<p>在gitHub你的博客路径下创建一个CNAME文件，里面填写你的域名==blog.chenzhaohuai.com==</p>
+<h3 id="遇到的坑"><a href="#遇到的坑" class="headerlink" title="遇到的坑"></a>遇到的坑</h3><ol>
+<li>使用搭建Hexo命令时，出现==Permission denied==问题，猜测可能是权限问题，所以执行==sudo -s==命令获取权限。</li>
+<li>CNAME文件创建问题，CNAME一定要在gitHub创建，然后下载下来，然后在复制道==blog/public/==路径下，不然每次同步道gitHub会被覆盖掉文件。</li>
+</ol>
+<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><ul>
+<li><a href="https://hexo.io/" target="_blank" rel="external">Hexo主页</a></li>
+<li><a href="http://blog.sunnyxx.com/2014/02/27/hexo_startup/" target="_blank" rel="external">hexo边搭边记</a></li>
+<li><a href="https://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/" target="_blank" rel="external">手把手教你使用Hexo + Github Pages搭建个人独立博客</a></li>
+<li><a href="http://wowubuntu.com/markdown/index.html" target="_blank" rel="external">Markdown 语法说明 (简体中文版)</a></li>
+</ul>
+
       
     </div>
 
@@ -477,7 +538,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装前提"><span class="nav-number">1.</span> <span class="nav-text">安装前提</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装前提"><span class="nav-number">1.</span> <span class="nav-text">安装前提</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Hexo"><span class="nav-number">2.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Next主题安装"><span class="nav-number">3.</span> <span class="nav-text">Next主题安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo简单使用命令"><span class="nav-number">4.</span> <span class="nav-text">Hexo简单使用命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#绑定域名"><span class="nav-number">5.</span> <span class="nav-text">绑定域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遇到的坑"><span class="nav-number">6.</span> <span class="nav-text">遇到的坑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考链接"><span class="nav-number">7.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
             
 
           </div>
